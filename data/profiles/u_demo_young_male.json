@@ -1,0 +1,7 @@
+{
+  "summary": "用户为年轻男性，关注血糖管理，饮食和睡眠习惯对血糖有较大影响。",
+  "basic": {
+    "gender": "male",
+    "age_group": "young_adult"
+  }
+}

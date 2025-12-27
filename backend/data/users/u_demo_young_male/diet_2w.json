@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0",
+  "user_id": "u_demo_young_male",
+  "summary": "近期偏外卖与重口，甜饮与夜宵偶发；晚餐碳水/油脂偏高，是血糖波动主要来源。",
+  "display_hint": {
+    "show_weeks": 2,
+    "columns": [
+      "breakfast",
+      "lunch",
+      "dinner"
+    ]
+  },
+  "weeks": [
+    {
+      "week_start": "2025-12-15",
+      "days": [
+        {
+          "date": "2025-12-15",
+          "breakfast": "豆浆+油条",
+          "lunch": "鸡排盖饭+可乐",
+          "dinner": "火锅外卖+米饭",
+          "snack": "薯片",
+          "beverage": "可乐",
+          "tags": [
+            "外卖",
+            "含糖饮料",
+            "高油"
+          ],
+          "est_kcal": 2800,
+          "est_sugar_g": 55,
+          "notes": "饭后未运动"
+        },
+        {
+          "date": "2025-12-16",
+          "breakfast": "咖啡+面包",
+          "lunch": "麻辣烫(米线)",
+          "dinner": "炒面+奶茶",
+          "snack": "曲奇",
+          "beverage": "奶茶",
+          "tags": [
+            "奶茶",
+            "碳水偏高"
+          ],
+          "est_kcal": 2500,
+          "est_sugar_g": 60,
+          "notes": "晚睡"
+        },
+        {
+          "date": "2025-12-17",
+          "breakfast": "燕麦+牛奶",
+          "lunch": "鸡胸沙拉",
+          "dinner": "拉面(少汤)",
+          "snack": "无",
+          "beverage": "美式咖啡",
+          "tags": [
+            "相对清淡"
+          ],
+          "est_kcal": 1900,
+          "est_sugar_g": 18,
+          "notes": "饭后走路10分钟"
+        },
+        {
+          "date": "2025-12-18",
+          "breakfast": "不吃",
+          "lunch": "汉堡+薯条",
+          "dinner": "便当(照烧鸡)+汤",
+          "snack": "巧克力",
+          "beverage": "气泡水",
+          "tags": [
+            "高油",
+            "外卖"
+          ],
+          "est_kcal": 2400,
+          "est_sugar_g": 30,
+          "notes": "中午暴食"
+        },
+        {
+          "date": "2025-12-19",
+          "breakfast": "包子+豆浆",
+          "lunch": "米线",
+          "dinner": "烧烤(偏多)",
+          "snack": "夜宵：泡面",
+          "beverage": "啤酒(少量)",
+          "tags": [
+            "夜宵",
+            "高盐"
+          ],
+          "est_kcal": 3000,
+          "est_sugar_g": 20,
+          "notes": "加班后吃夜宵"
+        },
+        {
+          "date": "2025-12-20",
+          "breakfast": "粥+鸡蛋",
+          "lunch": "自做家常菜",
+          "dinner": "披萨(2-3片)",
+          "snack": "酸奶",
+          "beverage": "无糖茶",
+          "tags": [
+            "周末"
+          ],
+          "est_kcal": 2200,
+          "est_sugar_g": 22,
+          "notes": "家里待一天"
+        },
+        {
+          "date": "2025-12-21",
+          "breakfast": "咖啡",
+          "lunch": "牛肉面",
+          "dinner": "轻食+酸奶",
+          "snack": "坚果",
+          "beverage": "无糖茶",
+          "tags": [
+            "相对清淡"
+          ],
+          "est_kcal": 1800,
+          "est_sugar_g": 12,
+          "notes": "晚餐较轻"
+        }
+      ]
+    },
+    {
+      "week_start": "2025-12-22",
+      "days": [
+        {
+          "date": "2025-12-22",
+          "breakfast": "咖啡+面包",
+          "lunch": "卤肉饭",
+          "dinner": "麻辣香锅",
+          "snack": "蛋糕(少量)",
+          "beverage": "奶茶(小杯)",
+          "tags": [
+            "外卖",
+            "重口"
+          ],
+          "est_kcal": 2600,
+          "est_sugar_g": 45,
+          "notes": "饭后未走动"
+        },
+        {
+          "date": "2025-12-23",
+          "breakfast": "不吃",
+          "lunch": "水饺(12个)",
+          "dinner": "米饭+红烧肉",
+          "snack": "水果(少量)",
+          "beverage": "气泡水",
+          "tags": [
+            "碳水偏高"
+          ],
+          "est_kcal": 2300,
+          "est_sugar_g": 18,
+          "notes": "晚餐偏油"
+        },
+        {
+          "date": "2025-12-24",
+          "breakfast": "白粥",
+          "lunch": "清汤面",
+          "dinner": "外卖粥+小菜",
+          "snack": "无",
+          "beverage": "温水",
+          "tags": [
+            "感冒样",
+            "清淡"
+          ],
+          "est_kcal": 1500,
+          "est_sugar_g": 10,
+          "notes": "喉咙痛"
+        },
+        {
+          "date": "2025-12-25",
+          "breakfast": "燕麦",
+          "lunch": "沙拉+鸡胸",
+          "dinner": "鸡汤+少量米饭",
+          "snack": "坚果",
+          "beverage": "无糖茶",
+          "tags": [
+            "清淡",
+            "恢复期"
+          ],
+          "est_kcal": 1700,
+          "est_sugar_g": 12,
+          "notes": "饭后走路15分钟"
+        },
+        {
+          "date": "2025-12-26",
+          "breakfast": "咖啡",
+          "lunch": "炸鸡+可乐",
+          "dinner": "火锅外卖",
+          "snack": "夜宵：饼干",
+          "beverage": "可乐",
+          "tags": [
+            "含糖饮料",
+            "夜宵"
+          ],
+          "est_kcal": 2900,
+          "est_sugar_g": 65,
+          "notes": "加班"
+        },
+        {
+          "date": "2025-12-27",
+          "breakfast": "我早饭吃了鸡腿",
+          "lunch": "午饭吃了米",
+          "dinner": "晚饭吃了饼",
+          "snack": "酸奶",
+          "beverage": "无糖茶",
+          "tags": [
+            "未完整"
+          ],
+          "est_kcal": 1600,
+          "est_sugar_g": 8,
+          "notes": "当天数据待补"
+        },
+        {
+          "date": "2025-12-28",
+          "breakfast": "我今天早饭吃了面",
+          "lunch": "午饭吃了包子",
+          "dinner": "夜宵吃了烤串",
+          "snack": "未记录",
+          "beverage": "未记录",
+          "tags": [
+            "未来"
+          ],
+          "est_kcal": 0,
+          "est_sugar_g": 0,
+          "notes": "未来日期"
+        }
+      ]
+    }
+  ]
+}

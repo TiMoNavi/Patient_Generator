@@ -1,0 +1,13 @@
+{
+    "schema_version": "1.0",
+    "user_id": "u_demo_young_male",
+    "generated_at": "2025-12-27T10:00:00+08:00",
+    "files": {
+      "profile_static": "profile_static.json",
+      "smalltalk": "smalltalk.json",
+      "health_record": "health_record.json",
+      "diet_2w": "diet_2w.json",
+      "recent_events": "recent_events.json",
+      "habits": "habits.json"
+    }
+}

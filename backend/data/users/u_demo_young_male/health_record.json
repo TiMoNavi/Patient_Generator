@@ -1,0 +1,36 @@
+{
+  "summary": "用户血糖偏高，存在超重/轻度肥胖倾向，需结合症状和测量时间进一步诊断。",
+  "conditions": [
+    "超重/轻度肥胖倾向"
+  ],
+  "medications": [],
+  "labs": [
+    {
+      "name": "血糖",
+      "value": 13.0,
+      "unit": "mmol/L",
+      "date": "2025-12-27",
+      "note": "fallback_from_chat"
+    },
+    {
+      "name": "血糖",
+      "value": 13.0,
+      "unit": "mmol/L",
+      "date": "2025-12-27",
+      "note": "fallback_from_chat"
+    },
+    {
+      "name": "血糖",
+      "value": 13.0,
+      "unit": "mmol/L",
+      "date": "2025-12-27",
+      "note": "fallback_from_chat"
+    },
+    {
+      "name": "血糖",
+      "value": 10,
+      "unit": "mmol/L",
+      "note": "用户报告血糖值，需明确测量时间（空腹/餐后/随机）以判断具体情况"
+    }
+  ]
+}
