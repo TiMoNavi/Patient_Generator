@@ -1,0 +1,3 @@
+echo ".env" >> .gitignore
+# 或者如果你是在 backend 目录下
+echo "backend/.env" >> .gitignore
