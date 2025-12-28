@@ -137,6 +137,14 @@ class ProfileUpdateAgent:
             hr = {"schema_version": "1.0", "user_id": user_id}
         labs = hr.get("labs") or []
         today = datetime.now(timezone.utc).date().isoformat()
+        # 避免同一天/同值重复写入
+        for l in labs:
+            if isinstance(l, dict) and str(l.get("name", "")).startswith("血糖") and l.get("date") == today:
+                try:
+                    if float(l.get("value", -1)) == val:
+                        return
+                except Exception:
+                    return
         labs.insert(0, {
             "name": "血糖",
             "value": val,
@@ -491,13 +499,26 @@ class PassiveContextAgent:
         self.base = Path(__file__).resolve().parent / "data" / "users"
 
     def _load(self, user_id: str, name: str) -> Dict[str, Any]:
-        path = self.base / user_id / f"{name}.json"
-        if not path.exists():
-            return {}
-        try:
-            return json.loads(path.read_text(encoding="utf-8"))
-        except Exception:
-            return {}
+        """
+        Load a user data file. Prefer JSON, but doctor Agent may emit markdown
+        or plain text; in that case wrap the text into {"summary": "..."} so the
+        downstream prompt仍能使用。
+        """
+        base_path = self.base / user_id / f"{name}.json"
+        candidates = [base_path, base_path.with_suffix(".md"), base_path.with_suffix(".txt")]
+        for path in candidates:
+            if not path.exists():
+                continue
+            try:
+                return json.loads(path.read_text(encoding="utf-8"))
+            except Exception:
+                try:
+                    text = path.read_text(encoding="utf-8").strip()
+                    if text:
+                        return {"summary": text[:2000]}
+                except Exception:
+                    continue
+        return {}
 
     def build(self, user_id: str) -> str:
         ps = self._load(user_id, "profile_static")

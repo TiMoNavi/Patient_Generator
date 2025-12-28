@@ -13,12 +13,27 @@ chat_store = ChatHistoryStore()
 
 
 def _safe_load(path: Path) -> Dict[str, Any]:
-    if not path.exists():
-        return {}
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return {}
+    """
+    Load JSON if present; fall back to .md/.txt or raw text as {"summary": text}.
+    The doctor Agent sometimes writes markdown notes instead of JSON, so we
+    normalize to a dict with a summary field when JSON parsing fails.
+    """
+    candidates = [path]
+    if path.suffix == ".json":
+        candidates += [path.with_suffix(".md"), path.with_suffix(".txt")]
+    for p in candidates:
+        if not p.exists():
+            continue
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            try:
+                text = p.read_text(encoding="utf-8").strip()
+                if text:
+                    return {"summary": text[:2000]}
+            except Exception:
+                pass
+    return {}
 
 
 class ScheduleTriggerAgent:
